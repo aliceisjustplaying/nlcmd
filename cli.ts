@@ -10,7 +10,7 @@ const input = await Bun.stdin.text();
 
 const { textStream } = streamText({
   model: anthropic("claude-haiku-4-5-20251001"),
-  system: "Convert to shell command. Output ONLY the raw command. No markdown, no code fences, no explanation.",
+  system: "Convert natural language to a shell command. Output ONLY the command itself - no explanations, no markdown, no alternatives, no questions. Make reasonable assumptions. One line only.",
   prompt: input.trim(),
   onError({ error }: { error: any }) {
     const msg = error.statusCode === 401 ? "Invalid API key"
