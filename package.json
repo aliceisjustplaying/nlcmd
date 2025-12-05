@@ -1,0 +1,16 @@
+{
+  "name": "2025-12-01-cli-helper",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@ai-sdk/anthropic": "^2.0.53",
+    "ai": "^5.0.106"
+  }
+}
