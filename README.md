@@ -16,7 +16,7 @@ Add to your `~/.zshrc`:
 
 ```zsh
 source /path/to/widget.zsh
-export ANTHROPIC_API_KEY="sk-..."
+export NLCMD_API_KEY="sk-..."
 ```
 
 ## Usage

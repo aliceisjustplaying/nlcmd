@@ -2,7 +2,8 @@ import { createAnthropic } from "@ai-sdk/anthropic";
 import { streamText } from "ai";
 
 const anthropic = createAnthropic({
-  ...(process.env.ANTHROPIC_BASE_URL && { baseURL: process.env.ANTHROPIC_BASE_URL }),
+  apiKey: process.env.NLCMD_API_KEY || process.env.ANTHROPIC_API_KEY,
+  ...(process.env.NLCMD_BASE_URL && { baseURL: process.env.NLCMD_BASE_URL }),
 });
 
 const input = await Bun.stdin.text();
