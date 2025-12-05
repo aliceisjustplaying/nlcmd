@@ -2,6 +2,8 @@
 
 Type natural language in your terminal, press Ctrl+G, get a shell command.
 
+Inspired by [this tweet](https://x.com/giansegato/status/1980414749407080574).
+
 ## Install
 
 ```bash
